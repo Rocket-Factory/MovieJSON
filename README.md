@@ -11,4 +11,6 @@
 3. `https://alagorn.8610000.xyz/api/v1/queue/movie/<豆瓣电影ID>`加入抓取队列（定时提交到Github，最长有一天延迟才能使用）。
 
 ## 协助完善
-在![Release](https://github.com/Rocket-Factory/DoubanMovieJSON/releases)中下载对应浏览器的辅助扩展，将会在浏览豆瓣电影页面时自动提交抓取。
+**在浏览豆瓣电影页面时自动提交抓取。**
+- 安装脚本：https://greasyfork.org/zh-CN/scripts/427606-doubanmoviejson
+- 或在[Release](https://github.com/Rocket-Factory/DoubanMovieJSON/releases)中下载对应浏览器的辅助扩展。
