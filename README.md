@@ -32,15 +32,11 @@ https://moviedb.8610000.xyz/movies.html
 
 当天七点前更新 (如https://moviedb.8610000.xyz/hot/20220604/movie_hot_gaia.json)
 
-#### 加入抓取队列
-- `https://moviedb.8610000.xyz/api/v1/queue/movie/<豆瓣电影ID>`
-
-10W次请求/日，定时提交，有延迟 (如https://moviedb.8610000.xyz/api/v1/queue/movie/26882248)
-
 ## 更新
 #### 2022.09.17
 - 修改仓库名称
 - 修改域名（只做了重定向，原域名可用）
+- 移除抓取脚本和抓取队列API
 
 #### 2022.06.04
 - 新增热门影视查询
