@@ -13,6 +13,11 @@ https://moviedb.8610000.xyz/movies.html
  
 包含特定电影的完整信息 (如https://moviedb.8610000.xyz/data/35235502.json)
 
+#### 特定电影相关影视推荐
+- `https://moviedb.8610000.xyz/recommendation/<电影ID>.json`
+
+包含电影基础信息和推荐影视列表（前期抓取的电影不存在此项信息） (如https://moviedb.8610000.xyz/recommendation/35256195.json)
+
 #### 所有电影的基本信息
 - `https://moviedb.8610000.xyz/q.json`
 
@@ -33,6 +38,10 @@ https://moviedb.8610000.xyz/movies.html
 当天七点前更新 (如https://moviedb.8610000.xyz/hot/20220604/movie_hot_gaia.json)
 
 ## 更新
+
+#### 2022.06.04
+- 新增相关影视推荐
+
 #### 2022.09.17
 - 修改仓库名称
 - 修改域名（只做了重定向，原域名可用）
