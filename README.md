@@ -5,13 +5,15 @@
 
 用于存放电影数据，可当做API使用。数据并不完整。
 
-https://moviefront.8610000.xyz
+[https://moviefront.8610000.xyz](https://moviefront.8610000.xyz/)
 
 ## 使用说明
+
+### 1.电影
 #### 特定电影详情
 - `https://moviedb.8610000.xyz/data/<电影ID>.json`
  
-包含特定电影的完整信息 (如https://moviedb.8610000.xyz/data/35235502.json)
+包含电影的完整信息 (如https://moviedb.8610000.xyz/data/35235502.json)
 
 #### 特定电影相关影视推荐
 - `https://moviedb.8610000.xyz/recommendation/<电影ID>.json`
@@ -23,12 +25,28 @@ https://moviefront.8610000.xyz
 
 包含标题、年份等，用于客户端缓存后检索查询用于客户端缓存后检索查询电影ID
 
-#### 标题筛选电影
+#### 标题筛选
 - `https://moviedb.8610000.xyz/suggest/<标题>.json`
 
 获取使用此标题的电影列表（**须将`/ \ : * ? " < > |`替换成`_`**） (如https://moviedb.8610000.xyz/suggest/芬奇.json)
 
+---
 
+### 2.影人
+#### 特定影人详情
+- `https://celebrity.8610000.xyz/data/<影人ID>.json`
+
+包含影人的完整信息 (如https://celebrity.8610000.xyz/data/1313742.json)
+
+
+#### 名字筛选
+- `https://celebrity.8610000.xyz/suggest/<名字>.json`
+
+获取同名的影人列表(如https://celebrity.8610000.xyz/suggest/大卫·叶茨.json)
+
+---
+
+### 3.榜单
 #### 热门影视
 - 热门影视：`https://moviedb.8610000.xyz/hot/<日期>/movie_hot_gaia.json`
 - 正在上映：`https://moviedb.8610000.xyz/hot/<日期>/movie_showing.json`
@@ -37,7 +55,10 @@ https://moviefront.8610000.xyz
 
 当天七点前更新 (如https://moviedb.8610000.xyz/hot/20220604/movie_hot_gaia.json)
 
+
 ## 更新
+#### 2023.01.23
+- 新增影人数据 (Rocket-Factory/CelebrityJSON)
 
 #### 2022.10.22
 - 新增相关影视推荐
